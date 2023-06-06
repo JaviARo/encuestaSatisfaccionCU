@@ -37,5 +37,5 @@ function resetRecargar() {
   clearTimeout(timeoutId);
   timeoutId = setTimeout(function() {
     document.location.reload()
-  }, 10000);
+  }, 30000);
 }
