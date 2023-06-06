@@ -14,7 +14,7 @@
   <script type="text/javascript" src="./script.js"></script>
 
   <h1>¡Valora el servicio recibido!</h1>
-  <form method='post' action=''>
+  <form method='post' action='createvaloracion.php'>
     <div id='caras'>
       <label>
         <div class='cara' id='triste'>
@@ -28,7 +28,7 @@
             </div>
           </div>
         </div>
-        <input class='radio' type='radio' id='triste' name='cara' onclick='radioSeleccionado()' />
+        <input class='radio' type='radio' id='triste' name='cara' value='negativa' onclick='radioSeleccionado()' />
       </label>
       <label>
         <div class='cara' id='neutral'>
@@ -42,7 +42,7 @@
             </div>
           </div>
         </div>
-        <input class='radio' type='radio' id='neutral' name='cara' onclick='radioSeleccionado()' />
+        <input class='radio' type='radio' id='neutral' name='cara' value='neutral' onclick='radioSeleccionado()' />
       </label>
       <label>
         <div class='cara' id='feliz'>
@@ -56,15 +56,15 @@
             </div>
           </div>
         </div>
-        <input class='radio' type='radio' id='feliz' name='cara' onclick='radioSeleccionado()' />
+        <input class='radio' type='radio' id='feliz' name='cara' value='positiva' onclick='radioSeleccionado()' />
       </label>
     </div>
     <div id='siguiente-pantalla' class='oculta'>
       <h2>Cuéntenos el porqué de su valoración</h2>
-      <textarea id='texto' placeholder='Escriba sus valoraciones'></textarea>
+      <textarea id='texto' name='texto' placeholder='Escriba sus valoraciones' value=''></textarea>
       <label>
         <p>E-mail</p>
-        <input id='correo' type='text' placeholder='Dirección de correo electrónico'/>
+        <input id='correo' name='email' type='text' placeholder='Dirección de correo electrónico' value=''/>
       </label>
       <input type='submit' value='Enviar valoración' />
   </form>
