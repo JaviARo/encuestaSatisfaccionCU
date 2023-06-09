@@ -17,7 +17,7 @@
   <form method='post' action='createvaloracion.php'>
     <div id='caras'>
       <label>
-        <div class='cara' id='triste'>
+        <div class='cara' id='feliz'>
           <div class='ojos-y-boca'>
             <div class='ojos'>
               <div class='ojo'></div>
@@ -28,7 +28,7 @@
             </div>
           </div>
         </div>
-        <input class='radio' type='radio' id='triste' name='cara' value='negativa' onclick='radioSeleccionado()' />
+        <input class='radio' type='radio' id='feliz' name='cara' value='bueno' onclick='radioSeleccionado()' />
       </label>
       <label>
         <div class='cara' id='neutral'>
@@ -42,10 +42,10 @@
             </div>
           </div>
         </div>
-        <input class='radio' type='radio' id='neutral' name='cara' value='neutral' onclick='radioSeleccionado()' />
+        <input class='radio' type='radio' id='neutral' name='cara' value='regular' onclick='radioSeleccionado()' />
       </label>
       <label>
-        <div class='cara' id='feliz'>
+        <div class='cara' id='triste'>
           <div class='ojos-y-boca'>
             <div class='ojos'>
               <div class='ojo'></div>
@@ -56,7 +56,7 @@
             </div>
           </div>
         </div>
-        <input class='radio' type='radio' id='feliz' name='cara' value='positiva' onclick='radioSeleccionado()' />
+        <input class='radio' type='radio' id='triste' name='cara' value='malo' onclick='radioSeleccionado()' />
       </label>
     </div>
     <div id='siguiente-pantalla' class='oculta'>
